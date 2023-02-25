@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAIL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><A href="index.html">HOME</a></li></A href>
+                <li><A href="About.html">ABOUT</a></li></A href>
+                <li><A href="Courses.html">COURSES</a></li></A href>
+                <li><A href="Health.html">HEALTH</a></li></A href>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            </ul>
+        </nav>
+
+
+        <div class="detel">
+            <h1>F R A I L  </h1>
+            <p>बराबरी का साथ निभाएं 
+                <br> महिलाएं अब आगे आएं  </p>
+            <a href="#">Book a Demo Class</a>
+        </div>
+        
+
+        <div class="social">
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="https://instagram.com/_.frail.com_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+           <a href="https://www.facebook.com/profile.php?id=100089868186471"><i class="fab fa-facebook"></i></a>
+           <a href="https://chat.whatsapp.com/BEwOaEiVpfC1jcItZjQWFa"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body 
+    {font-family: Arial, Helvetica, sans-serif;}
+    
+
+    /* input in that login ka page*/
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    
+
+    /*  buttons ka style */
+    button 
+    {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      cursor: pointer;
+      width: 100%;}
+    .imgcontainer 
+    {/* login page*/
+      text-align: center;
+      position: relative;}
+    img.avatar 
+    {
+      width: 30%;
+      border-radius: 90%;}
+    .container 
+    {
+      padding: 16px;}
+    
+    /*  logi page ka bg */
+    .modal 
+    {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      left: 0;top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto; /
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    }
+
+    
+    /* white content boxx */
+    .modal-content 
+    {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      border: 1px solid #888;
+      width: 40%; 
+    }
+    
+
+    /* close button placing */
+    .close 
+    {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+       /* cancel butten thing */
+       .cancelbtn 
+       {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+
+    </style>
+    </head>
+
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="logo.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login / sign up</button>
+          <label>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    </body>
+    </html>
